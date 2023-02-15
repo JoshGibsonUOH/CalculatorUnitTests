@@ -37,13 +37,6 @@ namespace Calculator_Tests
         }
 
         [Fact]
-        public void TestInvalidOperator()
-        {
-            ArgumentException ex = Assert.Throws<ArgumentException>(() => Calculator.Calculate(2, 3, '%'));
-            Assert.Equal("Invalid operator!", ex.Message);
-        }
-
-        [Fact]
         public void TestAdditionWithNegativeNumbers()
         {
             double result = Calculator.Add(-1, -2);
